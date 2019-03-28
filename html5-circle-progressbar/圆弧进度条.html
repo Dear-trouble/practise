@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.classycountdown.css" />
+		<script src="js1/jquery.min.js"></script>
+		<script src="js1/jquery.knob.js"></script>
+		<script src="js1/jquery.throttle.js"></script>
+		<script src="js1/jquery.classycountdown.js"></script>
+		<style>
+			.ClassyCountdown-wrapper > div{
+				width: 100%;
+				margin: 0;
+			}
+			.ClassyCountdown-wrapper .ClassyCountdown-value{
+				width: 100%;
+			}
+			.progress{
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+				display: inline-block;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="progress">
+			<div id="countdown8" class="ClassyCountdownDemo"></div>
+		</div>
+		<div class="progress">
+			<div id="countdown18" class="ClassyCountdownDemo"></div>
+		</div>
+		<div style="width: 30px;height: 30px;">
+			<div id="countdown28" class="ClassyCountdownDemo"></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$('#countdown8').ClassyCountdown({
+			eletitle:'',
+			elevalue:88,
+			theme: "flat-colors-black"
+		});
+		$('#countdown18').ClassyCountdown({
+			eletitle:'已完成',
+			elevalue:63,
+			theme: "flat-colors-black"
+		});
+		$('#countdown28').ClassyCountdown({
+			eletitle:'',
+			elevalue:60,
+			theme: "flat-colors-wide"
+		});
+	</script>
+</html>
